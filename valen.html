@@ -528,6 +528,15 @@ body {
     </div>
 
     <script>
+
+
+       const password = prompt("Please enter the secret code to see your Valentine's surprise:");
+
+if (password !== "0209") { 
+    alert("Wrong code! Access Denied.");
+    document.body.innerHTML = "<h1>Unauthorized Access</h1>";
+}
+       
 function nextPage(pageNumber) {
     // 1. Hide all pages
     document.querySelectorAll('.page').forEach(page => {
